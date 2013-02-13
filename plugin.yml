@@ -1,0 +1,39 @@
+name: FireTools
+main: com.onyxchills.firetools.FireToolsMain
+version: 1.0.5
+
+commands:
+    firearmor:
+      description: Toggles Fire Armor Ability.
+      usage: /<command>
+      permission: firetools.armor
+      default: op
+      permission-message: You don't have permission for that!   
+permissions:
+    firetools.*:
+        description: Gives Permission to ALL FireTools (TOOLS and ARMOR)
+        children:
+               firetools.armor: true
+               firetools.pickaxe: true
+               firetools.shovel: true
+               firetools.axe: true
+               firetools.hoe: true
+               firetools.sword: true 
+    firetools.armor:
+        description: Gives access to FireTools (ARMOR)
+        default: op            
+    firetools.pickaxe:
+        description: Gives access to FireTool Pickaxe (STONE)
+        default: op   
+    firetools.shovel:
+        description: Gives access to FireTool Shovel (SAND and GRAVEL)
+        default: op  
+    firetools.axe:
+        description: Gives access to FireTool Axe (BOOKSHELVES and WOOD)
+        default: op 
+    firetools.hoe:
+        description: Gives access to FireTool Hoe (WHEAT)
+        default: op 
+    firetools.sword:
+        description: Gives access to FireTool Sword (FIRE ASPECT)       
+        default: op                  
