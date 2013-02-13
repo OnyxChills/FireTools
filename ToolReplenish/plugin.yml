@@ -1,6 +1,6 @@
 name: ToolReplenish
 main: com.onyxchills.toolreplenish.ToolReplenishMain
-version: 0.0.1
+version: 1.0.0
 
 permissions:
     toolreplenish.fix:

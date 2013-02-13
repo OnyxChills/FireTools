@@ -4,7 +4,6 @@ import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.potion.PotionEffect;
@@ -15,10 +14,10 @@ public final class FireToolsMain extends  JavaPlugin
 	
 	//public static boolean state = false;
 	public static boolean statearmor = false;
-	ItemStack boots = new ItemStack(Material.GOLD_BOOTS);
-	ItemStack pants = new ItemStack(Material.GOLD_LEGGINGS);
-	ItemStack chest = new ItemStack(Material.GOLD_CHESTPLATE);
-	ItemStack helmet = new ItemStack(Material.GOLD_HELMET);
+	Material boots = Material.GOLD_BOOTS;
+	Material pants = Material.GOLD_LEGGINGS;
+	Material chest = Material.GOLD_CHESTPLATE;
+	Material helmet = Material.GOLD_HELMET;
 	
 	/*
 	 commands:
@@ -76,7 +75,7 @@ public final class FireToolsMain extends  JavaPlugin
     	        			player.removePotionEffect(PotionEffectType.FIRE_RESISTANCE);
     	        			return true;
     	        		}
-    	        		else if(statearmor == false && player.hasPermission("firetools.armor") && player.getEquipment().getChestplate().isSimilar(chest) && player.getEquipment().getLeggings().isSimilar(pants) && player.getEquipment().getBoots().isSimilar(boots) && player.getEquipment().getHelmet().isSimilar(helmet))
+    	        		else if(statearmor == false && player.hasPermission("firetools.armor") && player.getEquipment().getChestplate().getType() == chest && player.getEquipment().getLeggings().getType() == pants && player.getEquipment().getBoots().getType() == boots && player.getEquipment().getHelmet().getType() == helmet)
     	        		{
     	        			statearmor = true;
     	        			player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 20*600, 10));

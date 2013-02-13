@@ -1,6 +1,6 @@
 name: FireTools
 main: com.onyxchills.firetools.FireToolsMain
-version: 1.0.5
+version: 1.0.7
 
 commands:
     firearmor:
