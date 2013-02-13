@@ -1,0 +1,8 @@
+name: ToolReplenish
+main: com.onyxchills.toolreplenish.ToolReplenishMain
+version: 0.0.1
+
+permissions:
+    toolreplenish.fix:
+        description: Gives ToolReplenish Ability     
+        default: op                  
