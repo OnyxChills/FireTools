@@ -18,6 +18,7 @@ public class PlayerHandListener implements Listener
 		{
 			if(player.hasPermission("toolreplenish.fix"))
 			{
+				/*
     			if(item == Material.WOOD_SPADE || item == Material.WOOD_SWORD || item == Material.WOOD_PICKAXE || item == Material.WOOD_AXE || item == Material.WOOD_HOE)
     			{
     				player.getItemInHand().setDurability((short) ((item.getMaxDurability())-59));
@@ -33,16 +34,17 @@ public class PlayerHandListener implements Listener
         			player.getItemInHand().setDurability((short) ((item.getMaxDurability())-250));
         			return true;
     			}
-    			else if(item == Material.GOLD_SPADE || item == Material.GOLD_SWORD || item == Material.GOLD_PICKAXE || item == Material.GOLD_AXE || item == Material.GOLD_HOE)
+    			*/
+    			if(item == Material.GOLD_SPADE || item == Material.GOLD_SWORD || item == Material.GOLD_PICKAXE || item == Material.GOLD_AXE || item == Material.GOLD_HOE)
     			{
         			player.getItemInHand().setDurability((short) ((item.getMaxDurability())-32));
         			return true;
     			}
-    			else if(item == Material.DIAMOND_SPADE || item == Material.DIAMOND_SWORD || item == Material.DIAMOND_PICKAXE || item == Material.DIAMOND_AXE || item == Material.DIAMOND_HOE)
-    			{
-        			player.getItemInHand().setDurability((short) ((item.getMaxDurability())-1561));
-        			return true;
-    			}
+    			//else if(item == Material.DIAMOND_SPADE || item == Material.DIAMOND_SWORD || item == Material.DIAMOND_PICKAXE || item == Material.DIAMOND_AXE || item == Material.DIAMOND_HOE)
+    			//{
+        		//	player.getItemInHand().setDurability((short) ((item.getMaxDurability())-1561));
+        		//	return true;
+    			//}
     		}
 		}
 		else
