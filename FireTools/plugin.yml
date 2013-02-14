@@ -1,14 +1,7 @@
 name: FireTools
 main: com.onyxchills.firetools.FireToolsMain
 version: 1.0.7
-
-commands:
-    firearmor:
-      description: Toggles Fire Armor Ability.
-      usage: /<command>
-      permission: firetools.armor
-      default: op
-      permission-message: You don't have permission for that!   
+  
 permissions:
     firetools.*:
         description: Gives Permission to ALL FireTools (TOOLS and ARMOR)

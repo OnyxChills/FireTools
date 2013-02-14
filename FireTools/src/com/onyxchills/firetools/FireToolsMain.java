@@ -42,7 +42,7 @@ public final class FireToolsMain extends  JavaPlugin
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new BlockListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
-		//pm.registerEvents(new ArmorListener(), this);
+		pm.registerEvents(new ArmorListener(), this);
 	}
 	
 	@Override
@@ -51,7 +51,7 @@ public final class FireToolsMain extends  JavaPlugin
     }
 	
 	
-	
+	/*
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {    	
     	Player player = (Player)sender;
@@ -66,8 +66,6 @@ public final class FireToolsMain extends  JavaPlugin
     	        } 
     	        	else
     	        	{
-    	        		
-    	        		// && player.getEquipment().getChestplate().equals(chest) && player.getEquipment().getLeggings().equals(pants) && player.getEquipment().getBoots().equals(boots) && player.getEquipment().getHelmet().equals(helmet)
     	        		if(statearmor == true && player.hasPermission("firetools.armor"))
     	        		{
     	        			statearmor = false;
@@ -80,6 +78,7 @@ public final class FireToolsMain extends  JavaPlugin
     	        			statearmor = true;
     	        			player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 20*600, 10));
     	        			sender.sendMessage("FireArmor ON for 10 minutes. (Requires FULL Gold Armor)");
+    	        			player.setFireTicks(0);
     	        			return true;
     	        		}
     	        		else
@@ -95,4 +94,5 @@ public final class FireToolsMain extends  JavaPlugin
     	}
 		return false;
     }
+    */
 }
