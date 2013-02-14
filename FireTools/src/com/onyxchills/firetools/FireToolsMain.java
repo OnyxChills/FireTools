@@ -1,25 +1,18 @@
 package com.onyxchills.firetools;
 
-import org.bukkit.Material;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 public final class FireToolsMain extends  JavaPlugin
 {
-	
-	//public static boolean state = false;
+	/*
+	public static boolean state = false;
 	public static boolean statearmor = false;
 	Material boots = Material.GOLD_BOOTS;
 	Material pants = Material.GOLD_LEGGINGS;
 	Material chest = Material.GOLD_CHESTPLATE;
 	Material helmet = Material.GOLD_HELMET;
 	
-	/*
 	 commands:
    firetool:
       description: Toggles Fire Tool ability.
@@ -38,7 +31,6 @@ public final class FireToolsMain extends  JavaPlugin
 	@Override
     public void onEnable()
 	{		
-		getLogger().info("onEnable has been invoked!");
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new BlockListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
@@ -46,8 +38,9 @@ public final class FireToolsMain extends  JavaPlugin
 	}
 	
 	@Override
-    public void onDisable() {
-		getLogger().info("onDisable has been invoked!");
+    public void onDisable() 
+	{
+		
     }
 	
 	

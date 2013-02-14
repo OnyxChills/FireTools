@@ -4,17 +4,20 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerItemHeldEvent;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
 
 public class PlayerHandListener implements Listener
 {
 
 	@EventHandler
-	public boolean onPlayerRightClick(PlayerItemHeldEvent event)
+	public boolean onPlayerRightClick(PlayerInteractEvent event)
 	{
 		Player player = event.getPlayer();
 		Material item = player.getItemInHand().getType();
-		if(player.isSneaking())
+		Action action = event.getAction();
+		
+		if(event.getAction().equals(action))
 		{
 			if(player.hasPermission("toolreplenish.fix"))
 			{

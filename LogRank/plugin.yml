@@ -1,0 +1,10 @@
+name: LogRank
+main: com.onyxchills.logrank.LogRankMain
+version: 1.0.0
+
+commands:
+  join:
+    description: Allows building rights to new players
+    usage: /join <password>
+    default: true
+    permission-message: You don't have permission for that!
